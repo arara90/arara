@@ -1,0 +1,273 @@
+@CHARSET "UTF-8";
+
+
+
+.hidden{
+	display : none;
+	/* visibility : hidden; */
+}
+
+.button{
+	display : inline-block;
+	border:none;
+	border-left: 1px solid #8CBA34;
+	vertical-align: middle;
+    text-indent:-999px; 	
+}
+
+
+
+
+/* -------------------------header Style--------------------------*/
+
+#header{
+	
+	center;
+}
+
+#logo {
+	float:left;
+/* 	border : 2px solid red; */
+	position : absolute;
+	left : 0px;
+	top : 23px;
+}
+
+
+/* -------------------------main-menu Style-------------------------- */
+#main-menu{
+	display:inline-block;
+	position : absolute;
+	left : 200px;
+	top : 27px;
+	
+}
+
+#main-menu > ul
+{
+	/* border:1px solid red; */
+	overflow:auto;
+	
+}
+
+#main-menu > ul > li > a{
+	
+	font-size:15px;
+	font-family: "맑은 고딕", "고딕" , sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	color : #000;
+}
+
+
+#main-menu > ul > li{
+	float: left;
+	padding-left:24px;
+	background:url("../images/bg-main-menu-vsp.png") no-repeat 13px center;
+	
+}
+
+	
+	#main-menu > ul > li > a:hover{
+		color:#ff6a00;
+		text-decoration: underline;
+	}
+	
+	
+	
+	#main-menu > ul > li:first-child{
+	padding-left:0px;
+	background:none;
+	
+} 
+
+
+/* -------------------------lecture search Style-------------------------- */
+
+
+#lecture-search{
+	border : 5px solid #8CBA34;
+	width: 308px;
+	height: 25px;
+	display: inline-block;
+	position : absolute;
+	left : 468px;
+	top : 21px;
+}
+#lecture-search form{
+
+	border: 0px;
+}
+
+#lecture-search fieldset{
+	font-size: 0px;
+}
+
+#lecture-search fieldset label{
+	
+	display:inline-block;
+	
+	height : 25px;
+	width :55px;
+	
+	font-size: 11px;
+	text-align: center;
+	line-height:25px; 
+	/* height와 맞춰주면 자동으로 글씨 영역이 height만큼 되니까 위아래가운데 정렬된다. */
+	
+	vertical-align: middle;
+	
+
+}
+
+#lecture-search fieldset > input[type="text"]{
+	height : 25px;
+	border:none;
+	width:calc(100% - 86px);
+	line-height:25px;
+	vertical-align: middle;
+	font-size: 16px;
+	text-indent : 5px; 
+	/* padding-left: 5px; */
+	
+}
+
+#lecture-search fieldset > input[type="submit"]{
+	
+	
+	background:url("../images/btn-zoom.png") no-repeat center;
+	width: 31px;
+	height: 25px;
+	
+	/* 버튼상속
+	border:none;
+	border-left: 3px solid #8CBA34;
+	vertical-align: middle;
+    text-indent:-999px;   */   /* 왼쪽으로 쭉 날려버렸어(문장 첫문단 들여쓰기기능?) */
+	
+
+}
+
+
+/* -------------------------member-menu Style-------------------------- */
+#member-menu {
+	display : inline-block;
+	/* border : 2px solid red; */
+	position : absolute;
+	right : 0px;
+	top : 12px;
+}
+
+#member-menu > ul
+{
+	
+	display:inline-block;
+	overflow:auto; 
+	
+}
+
+ #member-menu > ul > li{
+	float:left;
+	padding-right:9px;
+	background:url("../images/bg-joinus-menu-vsp.png") no-repeat 33px center;
+	
+} 
+
+#member-menu > ul > li > a{
+	
+		font-size:10px;
+		font-family: "맑은 고딕", "고딕" , sans-serif;
+		font-weight: bold;
+		color : #979797;
+	}
+	
+		#member-menu > ul > li:last-child{
+		padding-right:0px;
+		background:none;
+	
+	} 
+	
+	
+
+
+/* ---------------------#customer-menu style-------------- */
+
+/* 
+/*  두개다 선택되는 이유는 a부모의 장녀를 찾으므로 */
+
+/* #customer-menu a:first-child{
+	background : pink
+}  */
+
+
+#customer-menu{
+	
+	display: inline-block;
+	/* border : 2px solid blue; */
+	font-size : 0px;
+	position : absolute;
+	right : 0px;
+	top : 40px;
+}
+
+/* #customer-menu ul{
+	border : 2px solid green;
+	font-size : 0px;
+	display: inline-block;
+	
+	}  */
+
+#customer-menu li{
+	
+	/* border : 2px solid red; */
+	float : left;
+	width : 71px;
+	font:0px;
+	
+	}
+
+#customer-menu li:first-child a{
+	background : url("../images/txt-mypage.png") no-repeat center;
+	
+	
+	width:71px;
+	height: 17px;
+} 
+
+#customer-menu li:last-child a{
+	background : url("../images/txt-customer.png") no-repeat center;
+	
+	
+	width:72px;
+	height: 17px;
+} 
+
+/* -------------------------aside-menu-------------------------- */
+
+
+#aside-menu li{
+
+	background : url("../images/bg-aside-menu-hsp.png") no-repeat center bottom;
+	height: 26px;
+}
+
+
+
+
+#aside-menu li a {
+	
+	font-size:11px;
+	font-family: "맑은 고딕", "고딕" , sans-serif;
+	font-weight: bold;
+	color : #808080;
+	padding-left: 26px;
+}
+
+
+
+#aside-menu li a:hover{
+	background: url("../images/icon-current.png") no-repeat 12px center;
+}
+
+
+

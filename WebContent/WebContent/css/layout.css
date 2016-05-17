@@ -1,0 +1,101 @@
+@CHARSET "UTF-8";
+
+
+
+#body .content-container{
+	display: flex;
+	background:url("../images/bg-body.png") repeat-y center;
+}
+
+ 
+.content-container {
+	height: inherit;
+	min-height: inherit;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: center;
+	
+ 	/* background:rgba(255,255,255,0.8); 
+	background:#60ff0000;
+	background: rgb(255, 255, 255);
+	opacity: 0.8;  */
+}
+
+ .clearfix:after{
+	content: "안녕하세요? 저 가짜에요.";
+	clear:both;
+	display:block;
+	
+} 
+
+#header {
+	/* background:yellow; */
+	/*background:#ffff00; 16진수 */
+	
+	height: 70px;
+}
+
+#visual {
+/* 	background:#313131 url("../images/bg-visual.png") no-repeat center; */
+	background-attachment: scroll;
+	height: 171px;
+	border-top:3px solid #8CBA34;
+	
+	}
+
+#body {
+
+	min-height: 100px;
+	margin-top:1px;
+	border-top:5px solid #8CBA34;
+}
+
+#footer {
+
+	height: 100px;
+}
+
+#aside {
+	width: 205px;
+	min-height: inherit;
+	background:url("../images/bg-aside-title.png") no-repeat left top;
+	
+}
+
+main {
+	position: relative;
+	width: 720px; /* 755-35 */
+	min-height: inherit;
+	
+	padding-left:35px;
+	padding-top:45px;
+	float:left;
+	
+	
+
+}
+
+ /* main + div{
+	background: orange;
+} 
+ */
+ 
+ 
+
+
+#quick-menu{
+	position :absolute;
+	left:100px;
+	top:200px;
+	width:200px;
+	height: 150px;
+	
+	background: #313131 url("../images/logo.png") no-repeat center;
+	background-attachment: local;
+	
+	overflow:scroll;
+	
+
+	
+}
